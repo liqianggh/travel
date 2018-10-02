@@ -4,11 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // 导入初始化css
-import './assets/styles/reset.css'
+import 'styles/reset.css'
 // 1像素边框解决文件，兼容多倍屏幕
-import './assets/styles/border.css'
+import 'styles/border.css'
 // 导入fastClick
 import fastClick from 'fastclick'
+// 引入全局得iconfont
+import 'styles/iconfont.css'
+
 Vue.config.productionTip = false
 // fastclick 使用
 fastClick.attach(document.body)
