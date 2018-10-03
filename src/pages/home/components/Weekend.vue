@@ -9,8 +9,7 @@
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
-          <button class="item-button">查看详情</button>
-        </div>
+         </div>
       </li>
     </ul>
   </div>
@@ -21,7 +20,7 @@ export default {
   data () {
     return {
       recommendList: [{
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
+        imgUrl: 'http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg',
         title: '北京野生动物园',
         desc: '哈哈哈哈哈哈哈北京真好玩'
       }, {
@@ -52,31 +51,27 @@ export default {
     background: #eee
     text-indent:.2rem
     margin-top:.2rem
-  .item
-    display: flex
-    height:1.9rem
+  .item-img-wrapper
+    height:0
     overflow: hidden
+    padding-bottom: 33.9%
     .item-img
-      width:1.7rem
-      height:1.7rem
-      padding:.1rem
-    .item-info
+      width:100%
+   .item-info
       min-width: 0
-      flex:1
-      padding:.1rem
-      .item-title
-        line-height:.54rem
-        font-size:.32rem
-        ellipsis()
-      .item-desc
-        line-height:.4rem
-        color: #ccc
-        ellipsis()
-      .item-button
-        line-height:.44rem
-        background:#ff9300
-        border-radius:.06rem
-        margin-top:.2rem
-        color: #fff
-        padding:0 .1rem
+     .item-title
+      line-height:.54rem
+      font-size:.32rem
+      ellipsis()
+    .item-desc
+      line-height:.4rem
+      color: #ccc
+      ellipsis()
+    .item-button
+      line-height:.44rem
+      background:#ff9300
+      border-radius:.06rem
+      margin-top:.2rem
+      color: #fff
+      padding:0 .1rem
 </style>
