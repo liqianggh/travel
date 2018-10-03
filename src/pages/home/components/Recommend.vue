@@ -16,30 +16,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>

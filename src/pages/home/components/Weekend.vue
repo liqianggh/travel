@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">周末去哪儿</div>
     <ul>
-      <li class="item" v-for="(item, index) of recommendList" :key="index">
+      <li class="item" v-for="(item, index) of weekendList" :key="index">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl" alt="">
         </div>
@@ -17,30 +17,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1509/81/0412da9c4db66a.jpg_r_640x214_8e23871e.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }, {
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/36/ce3d2d6c9ab44d67ae68d940b8781829.water.jpg_200x200_0938a8f2.jpg',
-        title: '北京野生动物园',
-        desc: '哈哈哈哈哈哈哈北京真好玩'
-      }]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>
