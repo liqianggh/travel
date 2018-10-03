@@ -44,18 +44,14 @@ export default {
   .wrapper
     overflow: hidden
     width: 100%
-<<<<<<< HEAD
     height:0
     padding-bottom: 26.25%
     .swiper-img
       width:100%
       background: #333333
-=======
     /*height:31.25vw*/
     padding-bottom: 31.25%
     .swiper-img
       width:100%
       background: #333333
-
->>>>>>> 6b94360ec8c16bc9462583dee1a754b21188395c
 </style>
