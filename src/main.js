@@ -15,6 +15,8 @@ import 'styles/iconfont.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 // require styles
 import 'swiper/dist/css/swiper.css'
+// vuex数据引入
+import store from './store/index.js'
 
 Vue.config.productionTip = false
 // fastclick 使用
@@ -25,6 +27,7 @@ Vue.use(VueAwesomeSwiper /* { default global options } */)
 new Vue({
   el: '#app',
   router: router,
+  store: store,
   components: { App: App },
   template: '<App/>'
 })
