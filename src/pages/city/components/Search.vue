@@ -5,7 +5,7 @@
     </div>
     <div v-show="keyword" class="search-content" ref="search">
       <ul>
-        <li class="search-item border-bottom" v-for="item of list" :key="item.name">
+        <li class="search-item border-bottom" v-for="(item ,index) of list" :key="index">
           {{item.name}}
         </li>
         <li v-show="!list.length" class="search-item border-bottom">没有找到匹配数据</li>
