@@ -1,9 +1,9 @@
 <template>
   <div>
     <detail-banner
-      :sightName='sightName'
-      :bannerImg='bannerImg'
-      :gallaryImgs='gallaryImgs'
+      :sightName="sightName"
+      :bannerImg="bannerImg"
+      :gallaryImgs="gallaryImgs"
     ></detail-banner>
     <detail-header></detail-header>
     <detail-list :list="list"></detail-list>
@@ -26,7 +26,10 @@ export default {
   },
   data () {
     return {
-      list: []
+      list: [],
+      sightName: '',
+      bannerImg: '',
+      gallaryImgs: []
     }
   },
   mounted () {
@@ -44,12 +47,11 @@ export default {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
-        console.log(data)
         this.sightName = data.sightName
-        console.log(data.sightName)
         this.bannerImg = data.bannerImg
         this.gallaryImgs = data.gallaryImgs
         this.list = data.categoryList
+        console.log(this.gallaryImgs)
       }
     }
   }

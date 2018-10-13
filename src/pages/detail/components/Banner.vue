@@ -39,6 +39,9 @@ export default {
       showGallary: false
     }
   },
+  mounted () {
+    console.log(this.gallaryImgs + 'hello')
+  },
   methods: {
     handleBannerClick () {
       this.showGallary = true
