@@ -22,5 +22,10 @@ export default new Router({
       name: 'detail',
       component: Detail
     }
-  ]
+  ],
+  // 每次路由切换时 让x，y位置都为零
+  scrollBehavior (to, from, savePosition) {
+    return { x: 0, y: 0 }
+  }
+
 })

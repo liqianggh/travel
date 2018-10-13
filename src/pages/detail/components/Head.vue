@@ -38,10 +38,16 @@ export default {
       }
     }
   },
-  activated () {
+  // activated () {
+  //   window.addEventListener('scroll', this.handleScroll)
+  // },
+  // deactivated () {
+  //   window.removeEventListener('scroll', this.handleScroll)
+  // }
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  unmounted () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
@@ -49,36 +55,36 @@ export default {
 <style lang="stylus" scoped>
   @import "~styles/variables.styl"
   .header-abs
-    position:absolute
-    left:.2rem
+    position: absolute
+    left: .2rem
     top: .2rem
     width: .8rem
-    height:.8rem
+    height: .8rem
+    line-height: .8rem
+    border-radius: .4rem
     text-align: center
-    line-height:.8rem
-    border-radius:.4rem
-    background: #000
+    background: rgba(0, 0, 0, .8)
     .header-abs-back
       color: #fff
-      font-size:.4rem
-
+      font-size: .4rem
   .header-fixed
+    z-index: 2
     position: fixed
     top: 0
     left: 0
     right: 0
-    /*overflow: hidden*/
-    line-height:$headerHeight
-    height:$headerHeight
-    color: #fff
+    height: $headerHeight
+    line-height: $headerHeight
     text-align: center
+    color: #fff
     background: $bgColor
+    font-size: .32rem
     .header-fixed-back
       position: absolute
       top: 0
       left: 0
-      width:.62rem
+      width: .64rem
       text-align: center
-      font-size:.4rem
-      color:#fff
+      font-size: .4rem
+      color: #fff
 </style>
